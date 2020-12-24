@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LA STORE FINDER</title>
+        <script src="js/store-data.js"></script>
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+	    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+	    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+	    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    </head>
+    <body>
+        <div class="title">Store Finder</div>
+        <div class="search-container">
+            <div class="search">
+                <input id="zip-code-input" type="text" placeholder="Enter zip"/>
+
+                <i class="fab fa-searchengin" onclick="searchStores()"></i>
+            </div>
+        </div>
+        <div class="stores-list-container">
+            <div class="stores-list">
+                <div class="store-container">
+                    <div class="store-info-container">
+                        <div class="store-address">
+
+                        </div>
+                        <div class="store-phone-number"></div>
+                    </div>
+                    <div class="store-number-container">
+                        <div class="store-number">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS5yunSBtUiRwFE6M8Z65i6JKyrRxX1YE&callback=initMap">
+        </script>
+    </body>
+</html>
