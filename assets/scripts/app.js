@@ -4,6 +4,10 @@ const Portfolio = function() {
 			{
 				text: "Javascript",
 				weight: 12.3
+			},
+			{
+				text: "Android Studio",
+				weight: 10.3
 			}, {
 				text: "Embedded C",
 				weight: 8
